@@ -5,9 +5,9 @@ const NavigationItems = (props) => {
     {
       title: "Products",
       columns: [
-        { details: ["Beta", "Blog", "Playground", "Pro Version"] },
-        { details: ["Lunching Now", "Marketing", "Adverts", "Media Cover"] },
-        { details: ["Buy", "Test", "Explore", "Rent"] },
+        { details: ["Talent Sourcing", "Payroll Mgmt", ] },
+        { details: ["Core-HR","Performance" ] },
+        { details: ["Attendance",] },
       ],
     },
     {
@@ -16,13 +16,12 @@ const NavigationItems = (props) => {
         {
           details: [
             "About Us",
-            "Library",
-            "Resources",
-            "Newsletter",
+            "Blog",
+            "Terms of Service",
           ],
         },
-        { details: ["Partners", "License", "Contact Us", "Support Center"] },
-        { details: ["FAQs", "Privacy", "Request", "Vision"] },
+        { details: ["Contact Us", "Support Center"] },
+        { details: ["FAQs", "Privacy"] },
       ],
     },
   ];

@@ -10,14 +10,14 @@ const Services = () => {
     const servicesData = [
         {
             img: stress,
-            title: "Stress-free employee data collection",
-            desc: "This software is very easy for you to manage. You can use it as you wish."
+            title: "Save and Secure Data Collection",
+            desc: "Your payroll&staff data is yours to manage and use at anytime. "
         },
 
         {
             img: time,
             title: "Save your time",
-            desc: "Upload, review and automatically send the right payslip to the right person - by email and on mobile."
+            desc: "Upload, review and automatically send the right payslip to the right person - by email and on whatsapp."
         },
         {
             img: accurancy,
@@ -30,7 +30,7 @@ const Services = () => {
     return (
         <section id="services">
             <div>
-                <h2 className="service-title">Prepare Payroll Automatically</h2>
+                <h2 className="service-title">Payrolls, Remmitance and Everything In-Between</h2>
                 <div className="row">
 
                     {servicesData.map(service => {

@@ -35,7 +35,7 @@ const Footer = () => {
                         <div>
                             <Logo height="50px" />
                         </div>
-                        <p className="logo-text">The AI-backed tech resourcing platform</p>
+                        <p className="logo-text">ReendaHR is an AI Powered Core-HR Software for people management and everything in between.</p>
                     </div>
 
                     <div className="col-12 col-lg-7">

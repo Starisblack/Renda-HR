@@ -16,7 +16,7 @@ const Hero = () => {
         <section id="hero">
             <div className="row">
                 <div className="col-12 col-lg-6">
-                    <h1>Process Payroll Quickly, Accurately and with Precision with RendaHR</h1>
+                    <h1>Process Payroll Quickly, Accurately and with Precision on RendaHR</h1>
                     <p>Pay your people on time, every time, without losing your Mind.</p>
 
                     <div style={{ marginTop: "29px" }}>
@@ -32,7 +32,7 @@ const Hero = () => {
 
                         <div className="staff-num">
                             <h2>40,000</h2>
-                            <p>Total Staff Served</p>
+                            <p>Staff Served</p>
                         </div>
                         <div className="divider-container">
                             <div className="divider" style={{ borderLeft: "3px solid black", height: "45px" }}>
@@ -41,7 +41,7 @@ const Hero = () => {
 
                         <div>
                             <h2>$5B</h2>
-                            <p>Total Disbursed</p>
+                            <p>Salaries Disbursed</p>
                         </div>
 
                     </div>
