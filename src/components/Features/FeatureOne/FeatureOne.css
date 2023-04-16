@@ -1,0 +1,9 @@
+#featureOne {
+    background-color: #F8F8FA;
+}
+
+@media (max-width: 769px) {
+    #featureOne{
+        padding: 5vw;
+    }
+}

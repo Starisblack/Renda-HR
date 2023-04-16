@@ -1,0 +1,19 @@
+.btn {
+    background: #F3723F;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 16px 50px 16px 42px;
+}
+
+
+.btn img {
+    height: 12.5px;
+    width: 15.5px;
+    margin-left: 5px;
+}
+
+.btn:hover{
+    background: #118CC0;
+    color: white;
+}

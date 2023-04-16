@@ -1,0 +1,44 @@
+#services{
+    text-align: center;
+}
+
+.card{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    border: none;
+    text-align: left;
+}
+.card img{
+    height: 60px;
+    width: 60px;
+}
+
+.card h3{
+    font-family: DM Sans;
+font-size: 21px;
+font-weight: 700;
+line-height: 33px;
+letter-spacing: 0px;
+text-align: left;
+
+}
+
+.card p{
+font-family: DM Sans;
+font-size: 16px;
+
+}
+
+@media (max-width: 769px) {
+    .card{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card h3{
+        text-align: center;
+    }
+    
+}

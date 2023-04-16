@@ -1,0 +1,11 @@
+.feature-img img{
+    height: 80%;
+    width: 80%;
+}
+
+@media (max-width: 992px) {
+     .feature-img img{
+        width: 100% !important;
+        object-fit: contain;
+     }
+} 
