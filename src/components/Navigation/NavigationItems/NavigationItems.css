@@ -7,15 +7,9 @@
   height: 100%;
 }
 
-.arrow-down {
-  border: solid #f3723f;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 2px;
-  margin-bottom: 0.25rem;
-  margin-left: 0.25rem;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+.fas {
+  font-size: 12px;
+  margin-left: 5px;
 }
 
 .dropdown-content {

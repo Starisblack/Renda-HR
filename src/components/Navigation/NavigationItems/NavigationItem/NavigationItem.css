@@ -26,10 +26,7 @@
   color: #118CC0 !important;
 }
 
-.NavigationItem a:hover .arrow-down {
-   border: 1px solid #118CC0;
-   border-width: 0 2px 2px 0;
-}
+
 
 @media (min-width: 769px) {
   .NavigationItem {

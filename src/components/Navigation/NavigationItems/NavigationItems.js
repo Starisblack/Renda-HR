@@ -33,7 +33,7 @@ const NavigationItems = (props) => {
           <div key={item.title} className="dropdown">
             <NavigationItem>
               {item.title}
-              <i className="arrow-down"></i>
+              <i className="fas fa-chevron-down"></i>
             </NavigationItem>
             <div className="dropdown-content">
               {item.columns.map((column, index) => {
@@ -42,7 +42,7 @@ const NavigationItems = (props) => {
                     {column.details.map((list) => {
                       return (
                         <li key={list}>
-                          <a href="/#">{list}</a>
+                          <a href="/">{list}</a>
                         </li>
                       );
                     })}
