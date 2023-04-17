@@ -5,9 +5,22 @@ const NavigationItems = (props) => {
     {
       title: "Products",
       columns: [
-        { details: ["Talent Sourcing", "Payroll Mgmt", ] },
-        { details: ["Core-HR","Performance" ] },
-        { details: ["Attendance",] },
+        {
+          details: [
+            {
+              title: "Talent Sourcing",
+              url: "/",
+            },
+            { title: "Payroll Mgmt", url: "/" },
+          ],
+        },
+        {
+          details: [
+            { title: "Core-HR", url: "/" },
+            { title: "Performance", url: "https://performance-hr.netlify.app" },
+          ],
+        },
+        { details: [{ title: "Attendance", url: "/" }] },
       ],
     },
     {
@@ -15,13 +28,23 @@ const NavigationItems = (props) => {
       columns: [
         {
           details: [
-            "About Us",
-            "Blog",
-            "Terms of Service",
+            { title: "About Us", url: "/" },
+            { title: "Blog", url: "/" },
+            { title: "Terms of Service", url: "/" },
           ],
         },
-        { details: ["Contact Us", "Support Center"] },
-        { details: ["FAQs", "Privacy"] },
+        {
+          details: [
+            { title: "Contact Us", url: "" },
+            { title: "Support Center", url: "/" },
+          ],
+        },
+        {
+          details: [
+            { title: "FAQs", url: "" },
+            { title: "Privacy", url: "/" },
+          ],
+        },
       ],
     },
   ];
@@ -42,7 +65,7 @@ const NavigationItems = (props) => {
                     {column.details.map((list) => {
                       return (
                         <li key={list}>
-                          <a href="/">{list}</a>
+                          <a href={list.url}>{list.title}</a>
                         </li>
                       );
                     })}
@@ -54,7 +77,6 @@ const NavigationItems = (props) => {
         );
       })}
 
-   
       <NavigationItem link="/#">Pricing</NavigationItem>
     </ul>
   );
