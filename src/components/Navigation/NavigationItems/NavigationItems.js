@@ -18,7 +18,7 @@ const NavigationItems = (props) => {
         {
           details: [
             { title: "Core-HR", url: "/" },
-            { title: "Performance", url: "https://performance-hr.netlify.app" },
+            { title: "Performance", url: "/" },
           ],
         },
         { details: [{ title: "Attendance", url: "/" }] },
@@ -55,7 +55,7 @@ const NavigationItems = (props) => {
       {menuItems.map((item) => {
         return (
           <div key={item.title} className="dropdown">
-            <NavigationItem>
+            <NavigationItem >
               {item.title}
               <i className="fas fa-chevron-down"></i>
             </NavigationItem>
@@ -65,7 +65,7 @@ const NavigationItems = (props) => {
                   <ul key={index * Math.random()} className="p-2">
                     {column.details.map((list) => {
                       return (
-                        <li key={list.title}>
+                        <li onClick={props.close} key={list.title}>
                           <Link to={list.url}>{list.title}</Link>
                         </li>
                       );
@@ -78,7 +78,7 @@ const NavigationItems = (props) => {
         );
       })}
 
-      <NavigationItem link="/pricing">Pricing</NavigationItem>
+      <NavigationItem clicked={props.close} link="/pricing">Pricing</NavigationItem>
     </ul>
   );
 };

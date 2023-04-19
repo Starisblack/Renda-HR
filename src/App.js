@@ -8,6 +8,7 @@ function App() {
   return (
     <Layout>
       <Routes>
+      <Route path="/" exact element={<Payroll />}/>
       <Route path="/payroll" element={<Payroll />}/>
         <Route path="/pricing" element={<Pricing />}/>
       </Routes>

@@ -13,7 +13,7 @@ const sideDrawer = (props) => {
     <div className={attachedClasses.join(" ")}>
 
       <nav>
-        <NavigationItems />
+        <NavigationItems  close={props.closed} />
       </nav>
     </div>
 
