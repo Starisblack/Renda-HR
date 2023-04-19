@@ -9,8 +9,8 @@ const PriceTableCard = () => {
       <thead>
         <tr className="table-price-category">
           <th></th>
-          <th>Essential</th>
-          <th>Perform</th>
+          <th>Inspire</th>
+          <th>Engage</th>
           <th>Boost</th>
         </tr>
       </thead>

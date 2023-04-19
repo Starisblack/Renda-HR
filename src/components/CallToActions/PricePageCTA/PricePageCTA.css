@@ -29,7 +29,7 @@
   margin-top: 40px;
 }
 
-.price-cta-btns button {
+.price-cta-btns a {
   padding: 16px 30px;
   font-family: Poppins;
   font-size: 20px;
@@ -83,7 +83,7 @@
     line-height: 1.2;
   }
 
-  .price-cta-btns button {
+  .price-cta-btns a {
     font-size: 14px;
   }
 }

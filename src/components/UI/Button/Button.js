@@ -1,9 +1,11 @@
-import "./Button.css"
+import "./Button.css";
 
-const Button = ({title, icon, clicked}) => {
+const Button = ({ title, icon, link }) => {
   return (
-    <button onClick={clicked} className="btn" >{title} {icon && <img src={icon} alt="arrow"/>}</button>
-  )
-}
+    <a className="btn" href={link} target="_blank" rel="noreferrer">
+      {title} {icon && <img src={icon} alt="arrow" />}
+    </a>
+  );
+};
 
-export default Button
+export default Button;

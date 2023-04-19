@@ -2,15 +2,10 @@ import "./PerformCTA.css";
 import Button from "../../../components/UI/Button/Button";
 import AccordionCard from "../../../components/Accordion/Accordion";
 import { Grid } from "@mui/material";
-import { useState } from "react";
-import OnBoardingModal from "../../../components/OnBoarding/OnBoarding";
+
 
 const PerformCTA = () => {
-  const [OnBoarding, setOnBoarding] = useState(false);
 
-  const handleModalClose = () => {
-    setOnBoarding(false);
-  };
 
   const accordionTitles = [
     "Competency Management",
@@ -21,7 +16,7 @@ const PerformCTA = () => {
   return (
     <div id="pm-cta">
       <Grid container>
-        <OnBoardingModal open={OnBoarding} handleClose={handleModalClose} />
+      
         <Grid item xs={12} md={6} className="pm-cta-left-container">
           <h2>Transform your team management process</h2>
           <p className="pm-left-text">
@@ -30,7 +25,7 @@ const PerformCTA = () => {
           </p>
           <Button
             title="Get started"
-            clicked={() => setOnBoarding(!OnBoarding)}
+            link="http://app.joinrenda.com/register"
           />
         </Grid>
 

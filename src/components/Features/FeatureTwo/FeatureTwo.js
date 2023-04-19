@@ -3,16 +3,9 @@ import ImageContent from "../FeaturesCard/ImageContent/ImageContent"
 import Description from "../FeaturesCard/Description/Description"
 import payroll from "../../../assets/images/payroll.jpg"
 import Button from "../../UI/Button/Button"
-import OnBoardingModal from "../../OnBoarding/OnBoarding"
-import { useState } from "react"
+
+
 const FeatureTwo = () => {
-
-
-    const [OnBoarding, setOnBoarding] = useState(false);
-
-    const handleModalClose = () => {
-      setOnBoarding(false);
-    };
 
 
     return (
@@ -26,8 +19,7 @@ const FeatureTwo = () => {
                     />
                   <div style={{marginTop: "40px"}}>
 
-                  <OnBoardingModal open={OnBoarding} handleClose={handleModalClose} />
-                  <Button title="Get Started Now" clicked={() => setOnBoarding(!OnBoarding)} />
+                  <Button title="Get Started Now" link="http://app.joinrenda.com/register" />
                   </div>
                 </div>
 

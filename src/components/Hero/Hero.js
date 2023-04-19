@@ -20,7 +20,7 @@ const Hero = () => {
                     <p>Pay your people on time, every time, without losing your Mind.</p>
 
                     <div style={{ marginTop: "29px" }}>
-                        <Button title="Start Paying Now" icon={arrow} />
+                        <Button title="Start Paying Now" icon={arrow} link="http://app.joinrenda.com/register" />
                     </div>
                     <div className="hero-details-container">
                         <div className="ellipse-container">

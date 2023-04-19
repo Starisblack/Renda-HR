@@ -2,12 +2,9 @@ import "./Toolbar.css";
 import NavigationItems from "../NavigationItems/NavigationItems";
 import Logo from "../../Logo/Logo";
 import DrawerToggle from "../SideDrawer/DrawerToggle/DrawerToggle";
-import { useEffect, useState } from "react";
-import OnBoardingModal from "../../OnBoarding/OnBoarding";
+import { useEffect } from "react";
 
 const Toolbar = (props) => {
-  const [OnBoarding, setOnBoarding] = useState(false);
-
   const changeBackground = () => {
     if (window.scrollY >= 66) {
       document.body.classList.add("scroll");
@@ -20,10 +17,6 @@ const Toolbar = (props) => {
     changeBackground();
     window.addEventListener("scroll", changeBackground);
   });
-
-  const handleModalClose = () => {
-    setOnBoarding(false);
-  };
 
   return (
     <header className="Toolbar">
@@ -40,18 +33,19 @@ const Toolbar = (props) => {
       ) : (
         <DrawerToggle clicked={props.clicked} />
       )}
-      
-      {OnBoarding && <OnBoardingModal open={OnBoarding} handleClose={handleModalClose} />  }  
+
       <nav className="desktop-view-only">
         <NavigationItems clicked={props.clicked} />
       </nav>
 
-      <button
-        onClick={() => setOnBoarding(!OnBoarding)}
+      <a
+        href="http://app.joinrenda.com/register"
+        target="_blank"
+        rel="noreferrer"
         className="btn   get-started-btn desktop-view-only"
       >
         Get Started
-      </button>
+      </a>
     </header>
   );
 };

@@ -7,7 +7,8 @@ const navigationItem = ( props ) => (
         <Link 
          onClick={props.clicked}
          className={props.class}
-         to={props.link} 
+         to={props.link}
+         preventScrollReset={false} 
         >{props.children}
         </Link> 
     </li>

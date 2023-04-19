@@ -2,26 +2,20 @@ import { Grid } from "@mui/material";
 import "./PerformanceHero.css";
 import Button from "../../../components/UI/Button/Button";
 import hero from "../../../assets/images/performanceImgs/hero.png";
-import { useState } from "react";
-import OnBoardingModal from "../../../components/OnBoarding/OnBoarding";
+
 
 const PerformanceHero = () => {
 
-  const [OnBoarding, setOnBoarding] = useState(false);
 
-  const handleModalClose = () => {
-    setOnBoarding(false);
-  };
 
 
   return (
     <section id="performanceHero">
-    <OnBoardingModal open={OnBoarding} handleClose={handleModalClose} />
       <Grid container >
         <Grid item xs={12} md={6}  className="pm-desc-container">
           <h1 className="pm-hero-title">Challenge your people for Improved performance.</h1>
           <p className="pm-hero-desc">Create a culture and work environment that attracts demanding and hungry young talents.</p>
-          <Button title="Get Started" clicked={() => setOnBoarding(!OnBoarding)}/>
+          <Button title="Get Started" link="http://app.joinrenda.com/register"/>
         </Grid>
 
         <Grid item xs={12} md={6}>

@@ -16,22 +16,31 @@
     margin-bottom: 150px;
 }
 
+
+
 @media (max-width: 631px) {
+
+
   .performance-page h1 {
-    font-size: 34px;
+    font-size: 34px !important;
   }
 
   .performance-page h2 {
-    font-size: 28px;
+    font-size: 28px !important;
   }
 
   .performance-page p {
-    font-size: 14px;
+    font-size: 14px !important;
   }
+
+  #pm-call-actions h1{
+    width: 100%;
+    margin-bottom: 75px;
+}
 }
 
 @media (max-width: 400px) {
   .performance-page h1 {
-    font-size: 30px;
+    font-size: 30px !important;
   }
 }

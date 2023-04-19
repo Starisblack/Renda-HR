@@ -42,7 +42,7 @@ const NavigationItems = (props) => {
         },
         {
           details: [
-            { title: "FAQs", url: "" },
+            { title: "FAQs", url: "/pricing/#faqs" },
             { title: "Privacy", url: "/" },
           ],
         },

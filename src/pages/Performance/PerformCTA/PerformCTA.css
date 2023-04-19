@@ -34,8 +34,9 @@
   #pm-cta h2 {
     width: 85%;
   }
-  .pm-cta-left-text {
+  .pm-left-text {
     width: 85%;
+    margin: 40px 0;
   }
 }
 

@@ -9,23 +9,31 @@ const Footer = () => {
     {
       title: "Products",
       content: [
-        "Technical Hiring",
-        "CoreHR Software",
-        "Payroll Management",
-        "People Management",
+        { title: "Technical Hiring", url: "/" },
+        { title: "CoreHR Software", url: "/" },
+        { title: "Payroll Management", url: "/payroll" },
+        { title: "People Management", url: "/" },
       ],
     },
 
     {
       title: "Company",
-      content: ["About us", "FAQs", "Talk to an expert"],
+      content: [
+        { title: "About us", url: "/" },
+        { title: "FAQs", url: "/faqs" },
+        { title: "Talk to an expert", url: "/" },
+      ],
     },
 
     {
       title: "Legal",
-      content: ["Terms & Conditions", "Privacy"],
+      content: [
+        { title: "Terms & Conditions", url: "/" },
+        { title: "Privacy", url: "/" },
+      ],
     },
   ];
+
 
   const year = new Date().getFullYear();
 
@@ -58,8 +66,8 @@ const Footer = () => {
                     <ul>
                       {section.content.map((content) => {
                         return (
-                          <li key={content}>
-                            <a href="/#">{content}</a>
+                          <li key={content.title}>
+                            <a href={content.url}>{content.title}</a>
                           </li>
                         );
                       })}

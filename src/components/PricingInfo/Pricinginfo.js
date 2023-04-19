@@ -12,7 +12,7 @@ export const Pricinginfo = () => {
 
   const pricingTableData = [
     {
-      title: "Essential",
+      title: "Inspire",
       desc: "For companies who want to centralize and run HR auto-magically.",
       subTitle: "Free forever for 10 employees.",
       featureNum: 10,
@@ -25,7 +25,7 @@ export const Pricinginfo = () => {
       ],
     },
     {
-      title: "Perform",
+      title: "Engage",
       desc: "For companies who want to centralize and run HR auto-magically.",
       subTitle: "From N4,000 / Employee/ Month.",
       featureNum: 30,
@@ -68,7 +68,12 @@ export const Pricinginfo = () => {
         })}
       </div>
 
-      <Grid container gap={3} columns={{sm: 12, md: 12}} className="pricing-table-container">
+      <Grid
+        container
+        gap={3}
+        columns={{ sm: 12, md: 12 }}
+        className="pricing-table-container"
+      >
         {pricingTableData.map((table) => {
           return (
             <Grid key={table.title} item xs={4} sm={4} md={3}>

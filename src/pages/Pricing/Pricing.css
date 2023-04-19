@@ -34,7 +34,10 @@
   width: 85%;
 }
 
+
+
 .faq-container {
+  position: relative;
   background-color: white;
   padding-top: 75px;
   padding-bottom: 130px;

@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import CallToAction from "../../components/CallToActions/CallToAction"
 import Features from "../../components/Features/Features"
 import Hero from "../../components/Hero/Hero"
@@ -7,8 +8,12 @@ import "./Payroll.css"
 
 
 const Payroll = () => {
+
+  useEffect(()=> {
+    window.scrollTo(0, 0);
+  }, [])
   return (
-    <div className="page">
+    <div className="page payroll-page">
          <Hero />
          <Services />
          <Features />

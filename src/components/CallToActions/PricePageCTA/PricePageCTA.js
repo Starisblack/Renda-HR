@@ -13,7 +13,7 @@ const  PricePageCTA = () => {
                 <h3>RendaHR is Free for teams less than 10 employees. Get started now!</h3>
              <div className="price-cta-btns">
                 <button className="free-btn">Start for Free</button>
-                <button className="sales-btn">Speak to Sales</button>
+                <a href="https://calendly.com/reactng/rendahr" target="_blank" rel="noreferrer" className="sales-btn">Speak to Sales</a>
              </div>
            </Grid>
         </Grid>
