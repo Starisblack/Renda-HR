@@ -3,6 +3,7 @@ import NavigationItems from "../NavigationItems/NavigationItems";
 import Logo from "../../Logo/Logo";
 import DrawerToggle from "../SideDrawer/DrawerToggle/DrawerToggle";
 import { useEffect } from "react";
+import { GetStartedBtn, LoginBtn } from "../../UI/Button/Button";
 
 const Toolbar = (props) => {
   const changeBackground = () => {
@@ -22,10 +23,6 @@ const Toolbar = (props) => {
     <header className="Toolbar">
       <Logo height="50px" />
 
-      <button className="btn get-started-btn mobile-view-only">
-        Get Started
-      </button>
-
       {props.open ? (
         <button onClick={props.clicked} className="close-btn mobile-view-only">
           Close
@@ -38,14 +35,10 @@ const Toolbar = (props) => {
         <NavigationItems clicked={props.clicked} />
       </nav>
 
-      <a
-        href="http://app.joinrenda.com/register"
-        target="_blank"
-        rel="noreferrer"
-        className="btn   get-started-btn desktop-view-only"
-      >
-        Get Started
-      </a>
+    <div className="nav-buttons desktop-view-only">
+       <LoginBtn />
+       <GetStartedBtn title="Get Started" />
+      </div>
     </header>
   );
 };

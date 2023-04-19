@@ -7,8 +7,8 @@ const PricingCard = ({ title, subTitle, desc, num, features }) => {
       <p className="price-desc">{desc}</p>
 
       <p className="price-title">{subTitle}</p>
-
-      <button className="pricing-btn">Start for free</button>
+     
+      <a href="http://app.joinrenda.com/register" target="_blank" rel="noreferrer"><button className="pricing-btn">Start for free</button></a>
 
       <p>{num}+ features, including:</p>
       <ul>

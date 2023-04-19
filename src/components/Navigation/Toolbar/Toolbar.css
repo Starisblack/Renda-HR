@@ -32,15 +32,17 @@
   border: none;
 }
 
-.get-started-btn {
+
+
+.nav-buttons {
   margin-left: auto;
 }
 
-.scroll .Toolbar{
-    background: white;
-  }
+.scroll .Toolbar {
+  background: white;
+}
 
-@media (max-width: 1036px) {
+@media (max-width: 1151px) {
   .Toolbar {
     justify-content: space-between;
     padding: 2vw 5vw;
@@ -53,7 +55,7 @@
     display: none;
   }
 
-  .get-started-btn {
+  .nav-buttons {
     border-radius: 10px;
     padding: 0.5rem 1rem;
     margin-right: 1.5rem;
@@ -61,7 +63,7 @@
 }
 
 @media (max-width: 769px) {
-  .get-started-btn {
+  .nav-buttons {
     display: none !important;
   }
 }
