@@ -1,24 +1,16 @@
-import CallToAction from "./components/CallToAction/CallToAction";
-import Features from "./components/Features/Features";
-import Footer from "./components/Footer/Footer";
-import Hero from "./components/Hero/Hero";
-import Services from "./components/Services/Services";
-import Testimonial from "./components/Testimonial/Testimonial";
+import { Route, Routes } from "react-router-dom";
 import Layout from "./containers/Layout/Layout";
+import Pricing from "./pages/Pricing/Pricing";
+import Payroll from "./pages/Payroll/Payroll";
 
 
 function App() {
   return (
-
     <Layout>
-      <Hero />
-      <Services />
-      <Features />
-      <Testimonial />
-      <CallToAction />
-      <Footer />
-
-
+      <Routes>
+      <Route path="/payroll" element={<Payroll />}/>
+        <Route path="/pricing" element={<Pricing />}/>
+      </Routes>
     </Layout>
   );
 }

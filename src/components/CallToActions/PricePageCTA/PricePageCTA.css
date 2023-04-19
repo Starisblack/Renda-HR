@@ -1,0 +1,89 @@
+.price-cta {
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+  border-radius: 10px;
+  padding: 127px 56px 134px 56px;
+  background: linear-gradient(
+    90.33deg,
+    #f3723f 12.65%,
+    #eda58e 67.53%,
+    #87cbfa 103.48%
+  );
+}
+
+.price-cta h2 {
+  width: 95%;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.price-cta h3 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.price-cta-btns {
+  margin-top: 40px;
+}
+
+.price-cta-btns button {
+  padding: 16px 30px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  border-radius: 10px;
+  border: none;
+  margin: 10px;
+}
+
+.free-btn {
+  background-color: #0d75bc;
+  color: white;
+}
+
+.sales-btn {
+  background-color: white;
+  color: #0d75bc;
+}
+
+@media (max-width: 992px) {
+  .price-cta {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .price-cta {
+    text-align: center;
+  }
+
+  .price-cta h2 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 631px) {
+  .price-cta {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .price-cta h2 {
+    font-size: 30px;
+  }
+
+  .price-cta h3 {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .price-cta-btns button {
+    font-size: 14px;
+  }
+}

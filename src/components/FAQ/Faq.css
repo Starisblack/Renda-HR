@@ -1,0 +1,34 @@
+.faq-box{
+    justify-content: center;
+}
+.faq-box h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  display: block;
+  padding-left: 8%;
+}
+
+.faq-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  color: #000000;
+}
+
+.faq-desc{
+    width: 75%;
+}
+
+
+
+@media (max-width: 992px) {
+     .faq-box h3{
+        padding-left: 0;
+     }
+
+     .faq-desc{
+        width: 100%;
+     }
+}
+

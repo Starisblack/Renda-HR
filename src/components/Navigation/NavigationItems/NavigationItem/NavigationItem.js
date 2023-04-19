@@ -1,14 +1,15 @@
 
+import { Link } from 'react-router-dom';
 import './NavigationItem.css';
 
 const navigationItem = ( props ) => (
     <li className="NavigationItem">
-        <a 
+        <Link 
          onClick={props.clicked}
          className={props.class}
-         href={props.link} 
+         to={props.link} 
         >{props.children}
-        </a> 
+        </Link> 
     </li>
 );
 

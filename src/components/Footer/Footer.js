@@ -1,75 +1,83 @@
-import Logo from "../Logo/Logo"
-import "./Footer.css"
+import { useLocation } from "react-router-dom";
+import Logo from "../Logo/Logo";
+import "./Footer.css";
 
 const Footer = () => {
+  const location = useLocation();
 
-    const footerSections = [{
-        title: "Products",
-        content: ["Technical Hiring",
-            "CoreHR Software",
-            "Payroll Management",
-            "People Management"]
+  const footerSections = [
+    {
+      title: "Products",
+      content: [
+        "Technical Hiring",
+        "CoreHR Software",
+        "Payroll Management",
+        "People Management",
+      ],
     },
 
     {
-        title: "Company",
-        content: ["About us", "FAQs", "Talk to an expert"]
+      title: "Company",
+      content: ["About us", "FAQs", "Talk to an expert"],
     },
 
     {
-        title: "Legal",
-        content: ["Terms & Conditions", "Privacy"]
-    }
+      title: "Legal",
+      content: ["Terms & Conditions", "Privacy"],
+    },
+  ];
 
-    ]
+  const year = new Date().getFullYear();
 
-    const year = new Date().getFullYear()
+  let footerBgColor;
 
-    return (
-        <div className="footer-container">
-            <footer
-            >
-                <div className="row w-100">
+  if (location.pathname === "/pricing") {
+    footerBgColor = "#F4F7FA";
+  }
 
-                    <div className="col-12 col-lg-4 footer-logo">
-                        <div>
-                            <Logo height="50px" />
-                        </div>
-                        <p className="logo-text">ReendaHR is an AI Powered Core-HR Software for people management and everything in between.</p>
-                    </div>
+  return (
+    <div style={{ background: footerBgColor }} className="footer-container">
+      <footer>
+        <div className="row w-100">
+          <div className="col-12 col-lg-4 footer-logo">
+            <div>
+              <Logo height="50px" />
+            </div>
+            <p className="logo-text">
+              ReendaHR is an AI Powered Core-HR Software for people management
+              and everything in between.
+            </p>
+          </div>
 
-                    <div className="col-12 col-lg-7">
-
-
-                        <div className="footer-sections">
-                            {footerSections.map(section => {
-
-                                return <div key={section.title}>
-                                    <h6>{section.title}</h6>
-                                    <ul>
-                                        {section.content.map(content => {
-                                            return <li key={content}>{content}</li>
-                                        })}
-                                    </ul>
-                                </div>
-                            })}
-
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-                <hr />
-                <div className="copyright">
-                    <p>Copyright RendaHR. {year} All rights reserved.</p>
-                </div>
-
-            </footer>
+          <div className="col-12 col-lg-7">
+            <div className="footer-sections">
+              {footerSections.map((section) => {
+                return (
+                  <div key={section.title}>
+                    <h6>{section.title}</h6>
+                    <ul>
+                      {section.content.map((content) => {
+                        return (
+                          <li key={content}>
+                            <a href="/#">{content}</a>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
-    )
-}
 
-export default Footer
+        <hr />
+        <div className="copyright">
+          <p>Copyright RendaHR. {year} All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default Footer;

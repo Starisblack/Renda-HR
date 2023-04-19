@@ -1,180 +1,154 @@
 #hero {
-    padding: 11vw 10vw 10vw 10vw;
+    padding-top: 2vw;
 }
 
 .mobile-view-only {
-    display: none;
+  display: none;
 }
 
 #hero h1 {
-    font-family: DM Sans;
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 60px;
-    letter-spacing: 0px;
-    text-align: left;
+  font-family: DM Sans;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0px;
+  text-align: left;
 }
 
 #hero p {
-    font-family: DM Sans;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: 0px;
-    text-align: left;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
 }
 
 .hero-details-container {
-    margin-top: 106px;
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    align-items: center;
+  margin-top: 106px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
 }
 
 .ellipse-container img {
-    height: 61px;
-    width: 61px;
-    border-radius: 0px;
+  height: 61px;
+  width: 61px;
+  border-radius: 0px;
 }
 
 .ellipse1,
 .ellipse2,
 .ellipse3 {
-    position: relative;
+  position: relative;
 }
 
 .ellipse1 {
-    left: 25px;
-    z-index: 5;
+  left: 25px;
+  z-index: 5;
 }
 
 .ellipse2 {
-    z-index: 4;
+  z-index: 4;
 }
 
 .ellipse3 {
-    right: 25px;
-    z-index: 2;
+  right: 25px;
+  z-index: 2;
 }
-
 
 .hero-img {
-    margin-top: -3rem;
-    width: 100%;
-    height: 110%;
+  margin-top: -3rem;
+  width: 100%;
+  height: 110%;
 }
 
-
 @media (max-width: 1322px) {
-    .hero-details-container{
-        flex-wrap: wrap;
-    }
+  .hero-details-container {
+    flex-wrap: wrap;
+  }
 
-    .ellipse1{
-        left: 0;
-    }
+  .ellipse1 {
+    left: 0;
+  }
 
-    .ellipse2{
-        right: 25px;
-    }
+  .ellipse2 {
+    right: 25px;
+  }
 
-    .ellipse3{
-        right: 50px;
-    }
+  .ellipse3 {
+    right: 50px;
+  }
 }
 
 @media (max-width: 1036px) {
-    
-    #hero {
-        padding-left: 7vw;
-        padding-right: 7vw;
-    }
+  #hero {
+    padding-left: 7vw;
+    padding-right: 7vw;
+  }
 }
 
 @media (max-width: 992px) {
-    #hero {
-        padding-top: 16vw;
-    }
+  .hero-details-container {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+  }
 
-    .hero-details-container {
-        margin-top: 4rem;
-        margin-bottom: 3rem;
-    }
-
-    .hero-img {
-        margin-top: 2rem;
-        object-fit: contain;
-        width: 100%;
-        height: 100%;
-    }
+  .hero-img {
+    margin-top: 2rem;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
 }
 
-
-
 @media (max-width: 769px) {
-    .mobile-view-only {
-        display: block;
-    }
-
+  .mobile-view-only {
+    display: block;
+  }
 }
 
 @media (max-width: 631px) {
-    #hero {
-        padding-left: 5vw;
-        padding-right: 5vw;
-    }
+  #hero h1 {
+    font-size: 34px;
+    line-height: 49px;
+    margin-top: 2rem;
+  }
 
+  .hero-details-container h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0;
+  }
 
-    #hero h1 {
-        font-size: 34px;
-        line-height: 49px;
-        margin-top: 2rem;
-    }
-
-    .hero-details-container h2{
-        font-size: 30px;
-        line-height: 40px;
-        margin: 0;
-    }
-
-    .hero-details-container p{
-        font-size: 16px;
-    }
-
-
-
-
+  .hero-details-container p {
+    font-size: 16px;
+  }
 }
 
-
-
 @media (max-width: 552px) {
-    
-   .hero-details-container{
+  .hero-details-container {
     gap: 10px;
-   }
+  }
 
-    .divider-container{
-        width: 100%;
-    }
+  .divider-container {
+    width: 100%;
+  }
 
-    .hero-details-container p{
-        margin: 0;
-    }
+  .hero-details-container p {
+    margin: 0;
+  }
 
-    .staff-num{
-        margin-left: -5%;
-    }
+  .staff-num {
+    margin-left: -5%;
+  }
 
-    .divider {
-       display: block;
-       width: 14%;
-       border-left: none !important;
-       border-top: 3px solid black !important;
-       height: 0 !important;
-
-    }
-
-
+  .divider {
+    display: block;
+    width: 14%;
+    border-left: none !important;
+    border-top: 3px solid black !important;
+    height: 0 !important;
+  }
 }

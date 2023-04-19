@@ -1,5 +1,6 @@
 import "./NavigationItems.css";
 import NavigationItem from "./NavigationItem/NavigationItem";
+import { Link } from "react-router-dom";
 const NavigationItems = (props) => {
   const menuItems = [
     {
@@ -11,7 +12,7 @@ const NavigationItems = (props) => {
               title: "Talent Sourcing",
               url: "/",
             },
-            { title: "Payroll Mgmt", url: "/" },
+            { title: "Payroll Mgmt", url: "/payroll" },
           ],
         },
         {
@@ -64,8 +65,8 @@ const NavigationItems = (props) => {
                   <ul key={index * Math.random()} className="p-2">
                     {column.details.map((list) => {
                       return (
-                        <li key={list}>
-                          <a href={list.url}>{list.title}</a>
+                        <li key={list.title}>
+                          <Link to={list.url}>{list.title}</Link>
                         </li>
                       );
                     })}
@@ -77,7 +78,7 @@ const NavigationItems = (props) => {
         );
       })}
 
-      <NavigationItem link="/#">Pricing</NavigationItem>
+      <NavigationItem link="/pricing">Pricing</NavigationItem>
     </ul>
   );
 };
