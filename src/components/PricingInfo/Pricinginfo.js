@@ -56,7 +56,7 @@ export const Pricinginfo = () => {
   return (
     <div className="pricing-info">
       <div className="text-center">
-        <h1>Scale better with the right plan</h1>
+        <h1>Scale better with the right offer</h1>
       </div>
       <div className="pricing-details-box">
         {pricingDetails.map((detail) => {
