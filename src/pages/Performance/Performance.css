@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&display=swap");
+
+.performance-page {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.performance-page p {
+  color: #969696;
+}
+
+#pm-call-actions{
+    background-color: #F8F8F8;
+}
+#pm-call-actions h1{
+    width: 75%;
+    margin-bottom: 150px;
+}
+
+@media (max-width: 631px) {
+  .performance-page h1 {
+    font-size: 34px;
+  }
+
+  .performance-page h2 {
+    font-size: 28px;
+  }
+
+  .performance-page p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .performance-page h1 {
+    font-size: 30px;
+  }
+}

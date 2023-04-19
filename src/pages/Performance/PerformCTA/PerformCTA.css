@@ -1,0 +1,46 @@
+#pm-cta{
+  margin-bottom: 50px;
+}
+
+.pm-cta-left-container h2 {
+  text-align: left;
+  font-family: Be Vietnam Pro; 
+  font-size: 38px;
+}
+
+.pm-left-text {
+  width: 70%;
+  margin-top: 40px;
+  margin-bottom: 85px;
+}
+
+.pm-cta-right-container {
+  padding-left: 11%;
+}
+
+@media (max-width: 900px) {
+
+ #pm-cta{
+    padding: 8% 0;
+ }
+
+  .pm-cta-right-container {
+    margin-top: 80px !important;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 631px) {
+  #pm-cta h2 {
+    width: 85%;
+  }
+  .pm-cta-left-text {
+    width: 85%;
+  }
+}
+
+@media (max-width: 450px) {
+  .left-text {
+    margin: 50px 0;
+  }
+}

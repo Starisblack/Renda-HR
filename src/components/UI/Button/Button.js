@@ -1,8 +1,8 @@
 import "./Button.css"
 
-const Button = ({title, icon, extraClass}) => {
+const Button = ({title, icon, clicked}) => {
   return (
-    <button className={extraClass + " btn"}>{title} {icon && <img src={icon} alt="arrow"/>}</button>
+    <button onClick={clicked} className="btn" >{title} {icon && <img src={icon} alt="arrow"/>}</button>
   )
 }
 

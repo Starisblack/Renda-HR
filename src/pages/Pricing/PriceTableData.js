@@ -11,19 +11,11 @@ export const priceTableData = [
           details: ["yes", "yes", "yes"],
         },
         {
-          title: "End of Contract Reminders",
-          details: ["yes", "yes", "yes"],
-        },
-        {
           title: "Employee Records",
           details: ["yes", "yes", "yes"],
         },
         {
           title: "Directory",
-          details: ["yes", "yes", "yes"],
-        },
-        {
-          title: "Org chart",
           details: ["yes", "yes", "yes"],
         },
         {
@@ -36,7 +28,7 @@ export const priceTableData = [
         },
         {
           title: "Standard Workflow Approvals",
-          details: ["yes", "yes", "yes"],
+          details: ["no", "yes", "yes"],
         },
         {
           title: "Compliance Training Tracking",
@@ -58,7 +50,7 @@ export const priceTableData = [
         },
         {
           title: "Automatic Accrual Rules",
-          details: ["yes", "yes", "yes"],
+          details: ["no", "yes", "yes"],
         },
         {
           title: "Automatic Carryover Rules",
@@ -66,7 +58,7 @@ export const priceTableData = [
         },
         {
           title: "Mobile Requests/Approvals",
-          details: ["no", "yes", "yes"],
+          details: ["no", "no", "yes"],
         },
         {
           title: "Add Attachments To Requests",
@@ -74,7 +66,7 @@ export const priceTableData = [
         },
         {
           title: "Notify Colleagues When Off",
-          details: ["no", "no", "yes"],
+          details: ["no", "yes", "yes"],
         },
       ],
     },
@@ -107,7 +99,7 @@ export const priceTableData = [
         },
         {
           title: "Offboarding",
-          details: ["yes", "yes", "yes"],
+          details: ["no", "yes", "yes"],
         },
       ],
     },
@@ -120,7 +112,7 @@ export const priceTableData = [
         },
         {
           title: "Clock In/Out",
-          details: ["no", "yes", "yes"],
+          details: ["yes", "yes", "yes"],
         },
         {
           title: "Multiple Work Schedule",
@@ -131,15 +123,7 @@ export const priceTableData = [
           details: ["no", "yes", "yes"],
         },
         {
-          title: "Optional Roll-up to Payroll",
-          details: ["yes", "yes", "yes"],
-        },
-        {
           title: "Team Attendance Management",
-          details: ["no", "yes", "yes"],
-        },
-        {
-          title: "Accessible on Web - Mobile",
           details: ["no", "yes", "yes"],
         },
       ],
@@ -157,7 +141,7 @@ export const priceTableData = [
         },
         {
           title: "Multiple recurring payments",
-          details: ["no", "no", "yes"],
+          details: ["no", "yes", "yes"],
         },
         {
           title: "Custom Exports",
@@ -169,7 +153,7 @@ export const priceTableData = [
         },
         {
           title: "Maximum Overtime Policy",
-          details: ["yes", "yes", "yes"],
+          details: ["no", "yes", "yes"],
         },
         {
           title: "Bulk Disbursement of Salaries",

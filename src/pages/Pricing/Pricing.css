@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Sansita:wght@400;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Sansita:wght@400;700;800;900&display=swap");
 
 .pricing-page {
   background: linear-gradient(
@@ -62,7 +62,7 @@
     width: 80%;
   }
 
-  .faq-container{
+  .faq-container {
     padding-left: 60px;
   }
 }
@@ -75,15 +75,13 @@
 }
 
 @media (max-width: 631px) {
-
-    .faq-container{
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    .pricing-table{
-       width: 100%;
-       border-radius: 0;
-       padding: 15px;
-    }
-
+  .faq-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .pricing-table {
+    width: 100%;
+    border-radius: 0;
+    padding: 15px;
+  }
 }

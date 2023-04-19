@@ -3,7 +3,18 @@ import ImageContent from "../FeaturesCard/ImageContent/ImageContent"
 import Description from "../FeaturesCard/Description/Description"
 import payroll from "../../../assets/images/payroll.jpg"
 import Button from "../../UI/Button/Button"
+import OnBoardingModal from "../../OnBoarding/OnBoarding"
+import { useState } from "react"
 const FeatureTwo = () => {
+
+
+    const [OnBoarding, setOnBoarding] = useState(false);
+
+    const handleModalClose = () => {
+      setOnBoarding(false);
+    };
+
+
     return (
         <section className="feature-two">
             <div className="row d-flex align-items-center f2-container">
@@ -14,7 +25,9 @@ const FeatureTwo = () => {
                         desc="With our layered payroll approvals, there is possibly no way anyone on your team will make a mistake with your payroll disbursement."
                     />
                   <div style={{marginTop: "40px"}}>
-                  <Button  title="Get Started  Now"/>
+
+                  <OnBoardingModal open={OnBoarding} handleClose={handleModalClose} />
+                  <Button title="Get Started Now" clicked={() => setOnBoarding(!OnBoarding)} />
                   </div>
                 </div>
 

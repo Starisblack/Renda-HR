@@ -18,7 +18,7 @@ const NavigationItems = (props) => {
         {
           details: [
             { title: "Core-HR", url: "/" },
-            { title: "Performance", url: "/" },
+            { title: "Performance", url: "/performance" },
           ],
         },
         { details: [{ title: "Attendance", url: "/" }] },
