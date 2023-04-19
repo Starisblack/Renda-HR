@@ -10,7 +10,7 @@ function App() {
     <Layout>
       <Routes>
       <Route path="/" exact element={<Payroll />}/>
-      <Route path="/payroll" element={<Payroll />}/>
+      <Route path="/payroll"   element={<Payroll />}/>
       <Route path="/pricing" element={<Pricing />}/>
       <Route path="/performance" element={<Performance /> } />
       </Routes>

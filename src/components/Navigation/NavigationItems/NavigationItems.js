@@ -66,7 +66,7 @@ const NavigationItems = (props) => {
                     {column.details.map((list) => {
                       return (
                         <li onClick={props.close} key={list.title}>
-                          <Link to={list.url}>{list.title}</Link>
+                            <Link to={list.url}>{list.title}</Link>
                         </li>
                       );
                     })}
