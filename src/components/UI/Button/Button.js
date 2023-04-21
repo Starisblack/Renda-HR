@@ -12,9 +12,9 @@ export default Button;
 
 export const GetStartedBtn = (props) => {
   return (
-    <a
+    <a   
       onClick={props.clicked}
-      href="http://app.joinrenda.com/register"
+      href="https://renda-hr.netlify.app/get-started"
       target="_blank"
       rel="noreferrer"
       className="btn get-started-btn"

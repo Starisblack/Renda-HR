@@ -10,7 +10,7 @@ const NavigationItems = (props) => {
           details: [
             {
               title: "Talent Sourcing",
-              url: "/",
+              url: "https://reacthq.dev",
             },
             { title: "Payroll Mgmt", url: "/payroll" },
           ],

@@ -19,7 +19,7 @@ const FeatureTwo = () => {
                     />
                   <div style={{marginTop: "40px"}}>
 
-                  <Button title="Get Started Now" link="http://app.joinrenda.com/register" />
+                  <Button title="Get Started Now" link="https://renda-hr.netlify.app/get-started" />
                   </div>
                 </div>
 

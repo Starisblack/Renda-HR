@@ -1,24 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap");
 
-.modal-container {
-  font-family: Mulish;
-}
 
-.modal-container.MuiBox-root {
+.on-boarding-container {
   background: linear-gradient(
     93.08deg,
     #ffffff 5.3%,
     #fff2ed 36.63%,
     #ffffff 72.36%,
     rgb(225 235 242) 98.15%
-  ) !important;
+  );
   text-align: center;
-  max-height: calc(100% - 64px) !important;
-  width: calc(100% - 64px) !important;
-  position: relative;
-  overflow-y: auto;
-  overflow-x: auto;
-  padding: 30px 0;
+  height: 100%;
+  width: 100%;
+  font-family: Mulish;
+  padding: 6% 10%;
 }
 
 .modal-title {
@@ -48,8 +43,13 @@
   background-color: white;
   padding: 30px 22px 30px 22px;
   border-radius: 10px;
+}
+
+.on-boarding-card:hover{
   box-shadow: 0px 4px 30px 0px #0000000d;
 }
+
+
 
 .on-boarding-card img {
   height: 50px;
@@ -70,12 +70,19 @@
   line-height: 1.5;
 }
 
-.back-home-btn.MuiButtonBase-root {
-  text-transform: none !important;
+.back-home-btn {
   background-color: #f3723f;
   border: none;
   margin-top: 40px;
+  padding: 16px 32px;
+  border-radius: 10px;
 }
+
+.back-home-btn:hover{
+  background-color: #118CC0;
+  color: white;
+}
+
 
 @media (max-width: 600px) {
   .on-boarding-card {

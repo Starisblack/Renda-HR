@@ -1,10 +1,7 @@
 import "./Homepage.css"
-import React from 'react'
 
 const Homepage = () => {
-  return (
-    <div className="page">Hello This is Home</div>
-  )
+  return  window.location.replace("https://react-hr.netlify.app");
 }
 
 export default Homepage;

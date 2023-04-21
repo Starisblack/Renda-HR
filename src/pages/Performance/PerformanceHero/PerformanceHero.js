@@ -15,7 +15,7 @@ const PerformanceHero = () => {
         <Grid item xs={12} md={6}  className="pm-desc-container">
           <h1 className="pm-hero-title">Challenge your people for Improved performance.</h1>
           <p className="pm-hero-desc">Create a culture and work environment that attracts demanding and hungry young talents.</p>
-          <Button title="Get Started" link="http://app.joinrenda.com/register"/>
+          <Button title="Get Started" link="https://renda-hr.netlify.app/get-started"/>
         </Grid>
 
         <Grid item xs={12} md={6}>

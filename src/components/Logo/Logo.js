@@ -3,7 +3,7 @@ import "./Logo.css";
 
 const logo = (props) => (
   <div className="Logo" style={{ height: props.height, margin: props.margin }}>
-    <a href="/">
+    <a href="https://react-hr.netlify.app">
       <img src={renderLogo} alt="renderHR" />
     </a>
   </div>

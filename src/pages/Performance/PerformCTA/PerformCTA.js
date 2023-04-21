@@ -25,7 +25,7 @@ const PerformCTA = () => {
           </p>
           <Button
             title="Get started"
-            link="http://app.joinrenda.com/register"
+            link="https://renda-hr.netlify.app/get-started"
           />
         </Grid>
 

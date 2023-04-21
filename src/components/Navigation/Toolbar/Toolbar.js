@@ -5,6 +5,7 @@ import DrawerToggle from "../SideDrawer/DrawerToggle/DrawerToggle";
 import { useEffect } from "react";
 import { GetStartedBtn, LoginBtn } from "../../UI/Button/Button";
 
+
 const Toolbar = (props) => {
   const changeBackground = () => {
     if (window.scrollY >= 66) {
@@ -35,9 +36,9 @@ const Toolbar = (props) => {
         <NavigationItems clicked={props.clicked} />
       </nav>
 
-    <div className="nav-buttons desktop-view-only">
-       <LoginBtn />
-       <GetStartedBtn title="Get Started" />
+      <div className="nav-buttons desktop-view-only">
+        <LoginBtn />
+        <GetStartedBtn title="Get Started" />
       </div>
     </header>
   );

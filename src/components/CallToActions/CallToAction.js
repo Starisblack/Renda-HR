@@ -10,7 +10,7 @@ const CallToAction = () => {
       </h1>
       <Button
         title="Get Started For Free"
-        link="http://app.joinrenda.com/register"
+        link="https://renda-hr.netlify.app/get-started"
       />
     </div>
   );
