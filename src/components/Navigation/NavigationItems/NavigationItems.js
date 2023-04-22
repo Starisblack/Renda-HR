@@ -21,7 +21,7 @@ const NavigationItems = (props) => {
             { title: "Performance", url: "/performance" },
           ],
         },
-        { details: [{ title: "Attendance", url: "/" }] },
+        { details: [{ title: "Attendance", url: "/attendance" }] },
       ],
     },
     {

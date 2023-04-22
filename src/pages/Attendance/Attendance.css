@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+.attendance-page {
+  font-family: "Quicksand", sans-serif;
+  background: radial-gradient(
+    148.94% 26.9% at 0% 2.35%,
+    #d8e1f1 0%,
+    #eaf4f3 76.88%,
+    #f1f2f4 100%
+  );
+
+  padding-bottom: 10%;
+}
+
+.attendance-page h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.attendance-page p {
+  color: #747478;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 38px;
+}
+
+
+
+#at-monitor h1{
+    text-align: center;
+}
+
+
+.at-tracking-features-box{
+    display: flex;
+    margin-top: 40px;
+    gap: 20px;
+}
+.at-tracking-features-box p{
+  margin-bottom: 0;
+}
+
+@media (max-width: 1025px) {
+    .attendance-page h1 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+
+    .at-tracking-features-box p{
+        margin-top: 0;
+    }
+
+    .attendance-page p{
+        margin-top: 40px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1026px) {
+    #time-track-container h1{
+        font-size: 64px;
+        line-height: 80px;
+    }
+}
+
+@media (max-width: 900px) {
+    #at-monitor .MuiGrid-container{
+        flex-wrap: wrap-reverse !important;
+        margin: 40px 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .attendance-page h1 {
+        font-size: 30px;
+    }
+
+    .attendance-page p{
+       font-size: 16px;
+       line-height: 1.5;
+       margin-top: 25px;
+    }
+
+    .at-tracking-features-box p{
+        margin-top: 0;
+    }
+}
