@@ -1,0 +1,109 @@
+.contact-page {
+  padding-right: 15%;
+  padding-left: 15%;
+}
+
+.contact-detail-container {
+  padding: 100px 40px 80px 50px;
+  box-shadow: 2.7px 14px 37px 0px #4b00811f;
+  justify-content: center;
+}
+
+.contact-title {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.leave-msg {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+}
+
+.contact-detail-box {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.contact-detail-title {
+  display: block;
+  font-family: Poppins;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  color: black;
+}
+
+.social-icons-contact a {
+  font-size: 25px;
+  margin-right: 20px;
+  cursor: pointer;
+  color: black;
+}
+
+.instagram:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.twitter:hover {
+  color: #1da1f2;
+}
+
+@media (max-width: 900px) {
+  .contact-detail-container {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-page {
+    padding: 20% 8% 10% 8%;
+  }
+}
+
+@media (max-width: 450px) {
+  .contact-title {
+    font-size: 25px;
+  }
+
+  .leave-msg {
+    font-size: 18px;
+  }
+  .contact-page {
+    padding: 20% 0 10% 0;
+  }
+
+  .contact-detail-container {
+    padding: 40px 25px;
+  }
+
+  .contact-detail-box {
+    gap: 20px;
+  }
+
+  .contact-detail-title {
+    font-size: 14px;
+  }
+
+  .contact-detail-box .MuiSvgIcon-fontSizeMedium {
+    font-size: 25px !important;
+  }
+}

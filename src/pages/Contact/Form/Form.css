@@ -1,0 +1,39 @@
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1.62px solid #b4bec8;
+}
+
+.contact-form input {
+  height: 60px;
+}
+
+.contact-form input:first-child {
+  margin-top: 0;
+}
+
+.contact-send-btn {
+  background-color: #f3723f;
+  width: 100%;
+  border-radius: 4px;
+  padding: 12px 20px;
+  border: none;
+  color: white;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+}
+
+.contact-send-btn:hover {
+  background-color: #118cc0;
+}
+
+@media (max-width: 631px) {
+  .contact-form input,
+  .contact-form textarea {
+    margin: 10px 0;
+  }
+}

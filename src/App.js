@@ -6,6 +6,7 @@ import Performance from "./pages/Performance/Performance";
 import OnBoardingModal from "./components/OnBoarding/OnBoarding";
 import Homepage from "./pages/Homepage/Homepage";
 import Attendance from "./pages/Attendance/Attendance";
+import Contact from "./pages/Contact/Contact";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Route path="/performance" element={<Performance /> } />
       <Route path="/attendance" element={<Attendance />}/>
       <Route path="/get-started" element={<OnBoardingModal />} />
+      <Route path="/contact" element={<Contact />} />
       </Routes>
     </Layout>
   );
