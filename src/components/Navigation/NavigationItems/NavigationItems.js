@@ -36,7 +36,7 @@ const NavigationItems = (props) => {
         },
         {
           details: [
-            { title: "Contact Us", url: "" },
+            { title: "Contact Us", url: "/contact" },
             { title: "Support Center", url: "/" },
           ],
         },
