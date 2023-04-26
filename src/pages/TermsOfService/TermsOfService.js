@@ -1,7 +1,13 @@
+import { useEffect } from "react";
 import "./TermsOfService.css";
 import { termsData } from "./TermsOfServiceData";
 
+
 const TermsOfService = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="page tc-page">
       <h1 className="tc-title">RendaHR - Terms Of Service</h1>
