@@ -31,7 +31,7 @@ const NavigationItems = (props) => {
           details: [
             { title: "About Us", url: "/" },
             { title: "Blog", url: "/" },
-            { title: "Terms of Service", url: "/" },
+            { title: "Terms of Service", url: "/terms-of-service" },
           ],
         },
         {
@@ -43,7 +43,7 @@ const NavigationItems = (props) => {
         {
           details: [
             { title: "FAQs", url: "/pricing/#faqs" },
-            { title: "Privacy", url: "/" },
+            { title: "Privacy", url: "/privacy" },
           ],
         },
       ],

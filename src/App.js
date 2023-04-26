@@ -7,6 +7,8 @@ import OnBoardingModal from "./components/OnBoarding/OnBoarding";
 import Homepage from "./pages/Homepage/Homepage";
 import Attendance from "./pages/Attendance/Attendance";
 import Contact from "./pages/Contact/Contact";
+import TermsOfService from "./pages/TermsOfService/TermsOfService";
+import Privacy from "./pages/Privacy/Privacy";
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
       <Route path="/attendance" element={<Attendance />}/>
       <Route path="/get-started" element={<OnBoardingModal />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/terms-of-service" element={<TermsOfService />} />
+      <Route path="/privacy" element={<Privacy />}/>
       </Routes>
     </Layout>
   );
