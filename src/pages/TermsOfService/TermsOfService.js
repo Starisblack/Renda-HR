@@ -24,6 +24,18 @@ const TermsOfService = () => {
             <div key={term.title} style={{marginBottom: "30px"}}>
               <p className="tc-detail-title">{term.title} </p>
               <p className="tc-detail-desc">{term.desc}</p>
+              <p className="tc-detail-desc">{term.subDesc}</p>
+
+            {/* present only at Transaction charge section */}
+              <div>
+                <p className="tc-detail-title" >{term.subContent?.title}</p>
+                 <ul >
+                  {term.subContent?.content.map(content => {
+                    return <li className="tc-transaction">{content}</li>
+                  })}
+                 </ul>
+              </div>
+
 
               {term.title === "Dispute Resolution" ? (
                 <ol>

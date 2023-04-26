@@ -53,6 +53,11 @@ ol > li:before {
   font-weight: 700;
 }
 
+
+.tc-transaction{
+  margin: 1rem 0;
+}
+
 @media (max-width: 631px) {
   .tc-details-container {
     padding: 5%;

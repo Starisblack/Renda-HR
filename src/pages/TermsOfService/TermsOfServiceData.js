@@ -26,9 +26,24 @@ export const termsData = [
       "Use RendaHR to gain unauthorized access to any network, system, or data.",
       "Use RendaHR to interfere with or disrupt the performance of RendaHR software or services.",
       "Use RendaHR to spam or send unsolicited messages.",
-      "Payment",
       "You agree to pay all fees and charges associated with your use of RendaHR. RendaHR reserves the right to change its fees and charges at any time, with reasonable notice to you.",
     ],
+  },
+
+  {
+    title: "Transaction Charge",
+    desc: "RendaHR shall charge you a transaction processing fee for all payroll transactions processed via our website. These charge may vary depending on the volume of the transaction. We will try our best to inform you at all times what your transaction charge per transaction shall be.",
+    subDesc:
+      "Here’s an idea of what we charge per payroll transaction processed (not fixed).",
+    subContent: {
+      title: "Nigeria",
+      content: [
+        "18 Naira + 7.5% VAT for Transactions up to N5,000.",
+        "40 Naira + 7.5% VAT for Transactions from N5,001 to N50,000.",
+        "70 Naira + 7.5% VAT for Transactions more than N50,001.",
+        "*Please note that this fees includes switch processing fees.",
+      ],
+    },
   },
 
   {
@@ -45,11 +60,11 @@ export const termsData = [
   },
   {
     title: "Termination",
-    desc: "RendaHR reserves the right to terminate your access to its software or services at any time, without notice, for any reason. You may also terminate your use of RendaHR at any time by contacting us at support@joinrendahr.com.",
+    desc: "RendaHR reserves the right to terminate your access to its software or services at any time, without notice, for any reason. You may also terminate your use of RendaHR at any time by contacting us at support@joinrenda.com.",
   },
   {
     title: "Governing Law and Language",
-    desc: "This Agreement is governed by the laws of the state of Georgia, USA, without regard to choice or conflicts of law rules. The United Nations Convention on Contracts for the International Sale of Goods does not apply to this Agreement. The official language of this Agreement is English. All contract interpretations, notices, and dispute resolutions shall be in English. Translations of any of these documents are not to be construed as official or original versions of the documents.",
+    desc: "This Agreement is governed by the laws of the Federal Repbulic of Nigeria, without regard to choice or conflicts of law rules. The United Nations Convention on Contracts for the International Sale of Goods does not apply to this Agreement. The official language of this Agreement is English. All contract interpretations, notices, and dispute resolutions shall be in English. Translations of any of these documents are not to be construed as official or original versions of the documents.",
   },
   {
     title: "Dispute Resolution",
@@ -62,6 +77,15 @@ export const termsData = [
   {
     title: "Limitations of Actions",
     desc: "No action arising out of this Agreement, regardless of form, may be brought by you more than one year after the date the cause of action has accrued.",
+  },
+  {
+   title: "Support",
+   desc: "If support is included in your Subscription Plan, RendaHR will provide you with support as described in your Subscription Plan.RendaHR shall not access your Data unless it is necessary to provide the Service and prevent or resolve service or technical issues, or in response to your direct request in relation to customer service issues or support."
+  },
+
+  {
+    title: "SLA commitment for paid customers",
+    desc: "The following Service Level Agreements (SLA) are applicable to paid customers. Customers in Free Plans do not benefit from the below SLA."
   },
   {
     title: "Modifications and Ammendements",
