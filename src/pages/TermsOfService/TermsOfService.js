@@ -22,7 +22,7 @@ const TermsOfService = () => {
               {term.title === "Dispute Resolution" ? (
                 <ol>
                   {term.descLists?.map((list) => {
-                    return <li>{list}</li>;
+                    return <li key={list}>{list}</li>;
                   })}
                 </ol>
               ) : (
