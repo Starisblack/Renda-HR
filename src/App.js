@@ -4,7 +4,7 @@ import Pricing from "./pages/Pricing/Pricing";
 import Payroll from "./pages/Payroll/Payroll";
 import Performance from "./pages/Performance/Performance";
 import OnBoardingModal from "./components/OnBoarding/OnBoarding";
-import Homepage from "./pages/Homepage/Homepage";
+// import Homepage from "./pages/Homepage/Homepage";
 import Attendance from "./pages/Attendance/Attendance";
 import Contact from "./pages/Contact/Contact";
 import TermsOfService from "./pages/TermsOfService/TermsOfService";
@@ -15,7 +15,7 @@ function App() {
   return (
     <Layout>
       <Routes>
-      <Route path="/" exact element={<Homepage /> }/>
+      <Route path="/" exact element={<Payroll /> }/>
       <Route path="/payroll"   element={<Payroll />}/>
       <Route path="/pricing" element={<Pricing />}/>
       <Route path="/performance" element={<Performance /> } />

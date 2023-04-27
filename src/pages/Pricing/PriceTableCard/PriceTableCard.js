@@ -5,7 +5,7 @@ import { priceTableData } from "../PriceTableData";
 
 const PriceTableCard = () => {
   return (
-    <table className="table-spacing">
+    <table className="price-table table-spacing">
       <thead>
         <tr className="table-price-category">
           <th></th>

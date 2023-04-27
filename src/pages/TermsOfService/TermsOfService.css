@@ -53,10 +53,36 @@ ol > li:before {
   font-weight: 700;
 }
 
-
 .tc-transaction{
   margin: 1rem 0;
 }
+
+.tc-table{
+  border: 2px solid;
+  margin-bottom: 30px;
+}
+
+.tc-table th{
+  font-family: Mulish;
+  border: 2px solid;
+  padding: 5px 10px;
+}
+
+.sla-details th{
+   color: #494949;;
+}
+
+.one{
+  width: 5%;
+}
+.two, .four{
+  width: 37.5%;
+}
+
+.three{
+  width: 20%;
+}
+
 
 @media (max-width: 631px) {
   .tc-details-container {
@@ -77,5 +103,9 @@ ol > li:before {
   .tc-detail-desc,
   .tc-details-container li {
     font-size: 14px;
+  }
+
+  .tc-table th{
+   font-size: 11px;
   }
 }

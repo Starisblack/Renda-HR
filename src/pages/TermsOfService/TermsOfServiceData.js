@@ -79,13 +79,42 @@ export const termsData = [
     desc: "No action arising out of this Agreement, regardless of form, may be brought by you more than one year after the date the cause of action has accrued.",
   },
   {
-   title: "Support",
-   desc: "If support is included in your Subscription Plan, RendaHR will provide you with support as described in your Subscription Plan.RendaHR shall not access your Data unless it is necessary to provide the Service and prevent or resolve service or technical issues, or in response to your direct request in relation to customer service issues or support."
+    title: "Support",
+    desc: "If support is included in your Subscription Plan, RendaHR will provide you with support as described in your Subscription Plan.RendaHR shall not access your Data unless it is necessary to provide the Service and prevent or resolve service or technical issues, or in response to your direct request in relation to customer service issues or support.",
   },
 
   {
     title: "SLA commitment for paid customers",
-    desc: "The following Service Level Agreements (SLA) are applicable to paid customers. Customers in Free Plans do not benefit from the below SLA."
+    desc: "The following Service Level Agreements (SLA) are applicable to paid customers. Customers in Free Plans do not benefit from the below SLA.",
+    slaTable: [
+      {
+        sn: 1,
+        desc: "Application not accessible.",
+        sla: "4 working hours (*)",
+        exp: ["System is unavailable"],
+      },
+      {
+        sn: 2,
+        desc: "Application is accessible but key modules cannot be accessed: login, employee list and profiles, onboarding, time-off, time attendance, payroll preparation, standard reports.",
+        sla: "8 working hours (*)",
+        exp: ["Login page unavailable", "System doesn’t respond after login"],
+      },
+      {
+        sn: 3,
+        desc: "Non-critical feature issue or a bypass solution is possible to temporarily work around the issue",
+        sla: "2 business days (*)",
+        exp: [
+          "A data column is supposed to be sorted in a certain order but is not.",
+          "The document an employee has uploaded through isn’t being visible on the web version, but visible on mobile.",
+        ],
+      },
+    ],
+    extraDesc: [
+      "(*) Times provided are based on Africa time zone and working hours (8am-6pm). SLA resolutiontime is based on the moment when Customer’s incident is acknowledged by the Customer Success (CS) team by email. All incidents above need to be reported by Customer to support@joinrenda.com for tracing.",
+      "There is no SLA for new feature request.",
+      "Renda support team will acknowledge incidents, classify their severity and inform Customer on next steps within 4 working hours (maximum) of receiving the request.",
+      "When RendaHR Services is unavailable, or material system or API outages, or defects are detected, the User will report the issue to RendaHR via support@joinnrenda.com.",
+    ],
   },
   {
     title: "Modifications and Ammendements",
